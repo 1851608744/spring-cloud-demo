@@ -1,0 +1,69 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: user
+
+  ## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8
+  ## rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test_virtual
+    #消息确认配置项
+
+    #确认消息已发送到交换机（Exchange）
+    publisher-confirms: true
+    #确认消息已发送到队列（Queue）
+    publisher-returns: true
+  ## nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+## mybatis扫包配置
+mybatis:
+  mapperLocations: classpath:/mybatis/*Mapper.xml
+  type-aliases-package: com.yw.demo
+## security oauth2 认证配置
+security:
+  oauth2:
+    resource:
+      ## 从认证授权中心上验证token
+      token-info-uri: http://localhost:8080/oauth/check_token
+      prefer-token-info: true
+
+    client:
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+      ## appId
+      client-id: client_1
+      ## appSecret
+      client-secret: 123456
+
+mq:
+  config:
+    exchange:
+      fanout: fanoutExchange
+      topic: topicExchange
+    queue:
+      fanoutA: fanout.A
+      fanoutB: fanout.B
+      fanoutC: fanout.C
+      man:
+        routing:
+          key: topic.man
+      woman:
+        routing:
+          key: topic.woman
+      error:
+        routing:
+          key: log.error.routing.key

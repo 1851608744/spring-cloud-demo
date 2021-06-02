@@ -1,0 +1,21 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: gate-way
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: routh #id
+          uri: 127.0.0.1:8848/demo-user #请求转发到的地址
+          # 匹配规则
+          predicates:
+            - Path=/**

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="basics-gateway" />
+        <module name="basics-kafka" />
+        <module name="basics-nacos-config" />
+        <module name="basics-nacos-server" />
+        <module name="common-core" />
+        <module name="oauth2-auth-server" />
+        <module name="rabbitmq" />
+        <module name="swagger" />
+        <module name="user" />
+        <module name="user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="basics-getway" target="1.5" />
+      <module name="basicsnacosserver" target="1.5" />
+      <module name="dto" target="1.5" />
+      <module name="userDTO" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
