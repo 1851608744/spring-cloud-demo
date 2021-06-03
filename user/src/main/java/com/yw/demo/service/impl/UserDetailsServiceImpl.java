@@ -4,7 +4,6 @@ import com.yw.demo.domain.SysPermission;
 import com.yw.demo.domain.SysUser;
 import com.yw.demo.mapper.SysUserMapper;
 import com.yw.demo.service.PermissionService;
-import com.yw.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -32,11 +30,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private SysUserMapper sysUserMapper;
     @Autowired
     private PermissionService permissionService;
-    /**
-     * 需新建配置类注册一个指定的加密方式Bean，或在下一步Security配置类中注册指定
-     */
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
 
     @Transactional

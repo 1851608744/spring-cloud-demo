@@ -24,7 +24,7 @@ spring:
     publisher-confirms: true
     #确认消息已发送到队列（Queue）
     publisher-returns: true
-  ## nacos配置
+  ## nacos注册中心
   cloud:
     nacos:
       discovery:

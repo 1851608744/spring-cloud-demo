@@ -13,19 +13,19 @@ import java.util.Map;
 @Component
 public class Receiver {
 
-    @RabbitListener(queues = "fanout.A")
+    //@RabbitListener(queues = "fanout.A")
     @RabbitHandler
     public void FanoutAProcess(Map map) {
         System.out.println("FanoutReceiverA消费者收到消息:" + map.toString());
     }
 
-    @RabbitListener(queues = "fanout.B")
+    //@RabbitListener(queues = "fanout.B")
     @RabbitHandler
     public void FanoutBProcess(Map map) {
         System.out.println("FanoutReceiverB消费者收到消息:" + map.toString());
     }
 
-    @RabbitListener(queues = "fanout.C")
+    //@RabbitListener(queues = "fanout.C")
     @RabbitHandler
     public void FanoutCProcess(Map map) {
         System.out.println("FanoutReceiverC消费者收到消息:" + map.toString());
