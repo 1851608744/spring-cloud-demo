@@ -82,7 +82,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authorizedGrantTypes("client_credentials")
                 .scopes("read", "write")
 
-                .authorities("ROLE_ADMIN","ROLE_USERs")
+                .authorities("ROLE_ADMIN","ROLE_USER")
                 .accessTokenValiditySeconds(72000);
     }
 
