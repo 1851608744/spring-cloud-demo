@@ -12,7 +12,7 @@ public interface PermissionService {
 
     List<SysPermission> findAll();
 
-    List<SysPermission> findByAdminUserId(int userId);
+
 
 
 

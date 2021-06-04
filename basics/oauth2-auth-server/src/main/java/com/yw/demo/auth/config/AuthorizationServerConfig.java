@@ -5,16 +5,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
-import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;
-import org.springframework.security.oauth2.provider.code.InMemoryAuthorizationCodeServices;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 
@@ -39,10 +37,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Resource
     private UserDetailsService userDetailsService;
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Bean
     public TokenStore tokenStore() {
@@ -59,31 +55,43 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.jdbc(dataSource)
-                //client_id (必须的)用来标识客户的Id
-                .withClient("client")
-                //客户端密钥
-                .secret(passwordEncoder().encode("123456"))
-                //资源列表
-                //.resourceIds("res1")
-                //授权类型
-                .authorizedGrantTypes("authorization_code", "client_credentials", "implicit","password", "refresh_token")
-                //客户端可以使用的权限（基于Spring Security authorities）
-                .authorities("ROLE_ADMIN", "ROLE_USER")
-                //限制客户段的访问范围，如果为空（默认）拥有全部的访问范围
-                .scopes("read", "write")
-                //跳转到授权页面
-                //.autoApprove(false)
-                //添加验证回调地址
-                //.redirectUris("http://www.baidu.com")
-                .accessTokenValiditySeconds(7200)
-                .refreshTokenValiditySeconds(7200)
-                .and().withClient("client_1")
-                .secret(passwordEncoder().encode("123456"))
-                .authorizedGrantTypes("client_credentials")
-                .scopes("read", "write")
+                ////密码模式
+                ////client_id (必须的)用来标识客户的Id
+                //.withClient("client")
+                ////客户端密钥
+                //.secret(passwordEncoder.encode("123456"))
+                ////资源列表
+                ////.resourceIds("res1")
+                ////授权类型
+                //.authorizedGrantTypes("password", "refresh_token")
+                ////客户端可以使用的权限（基于Spring Security authorities）
+                //.authorities("ROLE_ADMIN", "ROLE_USER")
+                ////限制客户段的访问范围，如果为空（默认）拥有全部的访问范围
+                //.scopes("read", "write")
+                ////跳转到授权页面
+                ////.autoApprove(false)
+                ////添加验证回调地址
+                ////.redirectUris("http://www.baidu.com")
+                //.accessTokenValiditySeconds(7200)
+                //.refreshTokenValiditySeconds(7200)
+                //
+                ////客户端模式
+                //.and().withClient("client_1")
+                //.secret(passwordEncoder.encode("123456"))
+                //.authorizedGrantTypes("client_credentials")
+                //.scopes("read", "write")
+                //.authorities("client_credentials")
+                //.accessTokenValiditySeconds(72000)
 
-                .authorities("ROLE_ADMIN","ROLE_USER")
-                .accessTokenValiditySeconds(72000);
+                //授权码模式
+                .withClient("client_code")
+                .secret(passwordEncoder.encode("123456"))
+                .authorizedGrantTypes("authorization_code", "refresh_token", "password", "implicit")
+                .scopes("all")
+                .authorities("ROLE_ADMIN")
+                .redirectUris("http://www.baidu.com")
+                .accessTokenValiditySeconds(1200)
+                .refreshTokenValiditySeconds(1200);
     }
 
     /**
@@ -94,6 +102,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.tokenKeyAccess("permitAll()")
+                //认证服务器安全配置
+                .passwordEncoder(passwordEncoder)
                 .checkTokenAccess("isAuthenticated()")
                 .allowFormAuthenticationForClients();// 允许表单登录
     }

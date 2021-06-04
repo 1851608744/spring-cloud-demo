@@ -70,6 +70,11 @@ public interface SysPermissionMapper{
 	SysPermission getOneByCondition(@Param("sysPermission") SysPermission sysPermission);
 
 
-	List<SysPermission> getList(int userId);
+	/**
+	 * 权限许可名称
+	 * @param userId
+	 * @return
+	 */
+	List<String> getNameByUserId(@Param("userId") int userId);
 
 }

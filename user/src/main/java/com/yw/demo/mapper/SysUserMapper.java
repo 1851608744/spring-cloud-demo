@@ -72,10 +72,10 @@ public interface SysUserMapper{
 
 
 	/**
-	 * 单条查询
+	 * 用户授权信息查询
 	 * @param sysUser
 	 * @return
 	 */
-	SysUser getOne(@Param("sysUser") SysUser sysUser);
+	SysUser getOneByName(@Param("sysUser") SysUser sysUser);
 
 }

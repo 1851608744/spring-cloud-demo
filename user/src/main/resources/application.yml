@@ -7,10 +7,11 @@ spring:
 
   ## 数据库配置
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Hongkong
+
   ## rabbitmq配置
   rabbitmq:
     host: 127.0.0.1
@@ -24,30 +25,35 @@ spring:
     publisher-confirms: true
     #确认消息已发送到队列（Queue）
     publisher-returns: true
+
   ## nacos注册中心
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-## mybatis扫包配置
-mybatis:
-  mapperLocations: classpath:/mybatis/*Mapper.xml
-  type-aliases-package: com.yw.demo
+
+
 ## security oauth2 认证配置
 security:
   oauth2:
     resource:
       ## 从认证授权中心上验证token
-      token-info-uri: http://localhost:8080/oauth/check_token
+      token-info-uri: http://localhost:8091/oauth/check_token
       prefer-token-info: true
 
     client:
-      access-token-uri: http://localhost:8080/oauth/token
-      user-authorization-uri: http://localhost:8080/oauth/authorize
+      access-token-uri: http://localhost:8091/oauth/token
+      user-authorization-uri: http://localhost:8091/oauth/authorize
       ## appId
-      client-id: client_1
+      client-id: client_code
       ## appSecret
       client-secret: 123456
+
+## mybatis扫包配置
+mybatis:
+  mapperLocations: classpath:/mybatis/*Mapper.xml
+  type-aliases-package: com.yw.demo
+
 
 mq:
   config:
@@ -67,3 +73,4 @@ mq:
       error:
         routing:
           key: log.error.routing.key
+debug: true

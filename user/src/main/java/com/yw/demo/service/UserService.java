@@ -7,7 +7,7 @@ import com.yw.demo.domain.User;
  * @data 2021/05/31
  **/
 
-public interface UserService {
+public interface UserService  {
 
 
     void saveUser(User user);
@@ -15,5 +15,6 @@ public interface UserService {
     User queryUser(User user);
 
     void updateUser(User user);
+
 
 }

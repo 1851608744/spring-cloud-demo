@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.List;
 
 /**
  * @author xucaigui
@@ -40,6 +41,14 @@ public class GsonUtils {
             return (String)obj;
         }
         return gson.toJson(obj);
+    }
+
+    public static <T> T toBean(Object data, Type t) {
+        return gson.fromJson(gson.toJson(data), t);
+    }
+
+    public static <T> T toListBean(Object data, Class ... t) {
+        return GsonUtils.fromJson(List.class, gson.toJson(data), t);
     }
 
     private static ParameterizedType type(final Class raw, final Type... args) {

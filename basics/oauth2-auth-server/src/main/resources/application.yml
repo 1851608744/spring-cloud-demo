@@ -1,16 +1,49 @@
 server:
   port: 8080
+
 spring:
   application:
     name: auth-server
+
+  ## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Hongkong
+
   ## nacos注册中心
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+      client:
+        access-token-uri: http://localhost:8080/oauth/token
+        user-authorization-uri: http://localhost:8080/oauth/authorize
+        ## appId
+        client-id: client_code
+        ## appSecret
+        client-secret: 123456
+  security:
+    user:
+      name: admin
+      password: admin
 
 
-management:
-  endpoint:
-    health:
-      enabled: true
+## security oauth2 认证配置
+security:
+  oauth2:
+    resource:
+      ## 从认证授权中心上验证token
+      token-info-uri: http://localhost:8080/oauth/check_token
+      prefer-token-info: true
+
+feign:
+  httpclient:
+    connection-timeout: 3000
+    enabled: false
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
+debug: true

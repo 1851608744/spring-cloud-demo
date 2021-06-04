@@ -22,11 +22,5 @@ public class PermissionServiceImpl implements PermissionService {
         return null;
     }
 
-    public List<SysPermission> findByAdminUserId(int userId) {
 
-        List<SysPermission> permissions = sysPermissionMapper.getList(userId);
-
-        return permissions;
-
-    }
 }
