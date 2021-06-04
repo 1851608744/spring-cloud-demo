@@ -19,11 +19,6 @@
         <module name="user-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="basics-getway" target="1.5" />
-      <module name="basicsnacosserver" target="1.5" />
-      <module name="dto" target="1.5" />
-      <module name="userDTO" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
