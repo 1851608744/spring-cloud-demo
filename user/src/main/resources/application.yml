@@ -34,20 +34,20 @@ spring:
 
 
 ## security oauth2 认证配置
-security:
-  oauth2:
-    resource:
-      ## 从认证授权中心上验证token
-      token-info-uri: http://localhost:8091/oauth/check_token
-      prefer-token-info: true
-
-    client:
-      access-token-uri: http://localhost:8091/oauth/token
-      user-authorization-uri: http://localhost:8091/oauth/authorize
-      ## appId
-      client-id: client_code
-      ## appSecret
-      client-secret: 123456
+#security:
+#  oauth2:
+#    resource:
+#      ## 从认证授权中心上验证token
+#      token-info-uri: http://localhost:8091/oauth/check_token
+#      prefer-token-info: true
+#
+#    client:
+#      access-token-uri: http://localhost:8091/oauth/token
+#      user-authorization-uri: http://localhost:8091/oauth/authorize
+#      ## appId
+#      client-id: client_code
+#      ## appSecret
+#      client-secret: 123456
 
 ## mybatis扫包配置
 mybatis:

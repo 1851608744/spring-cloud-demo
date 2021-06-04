@@ -32,11 +32,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 //其他没有限定的请求，允许随意访问
                 .anyRequest().permitAll()
                 //对于没有配置权限的其他请求允许匿名访问
-                .and().anonymous()
+                .and().anonymous();
                 //使用spring security 默认登录页面
-                .and().formLogin()
+                //.and().formLogin()
                 //启用http基础验证
-                .and().httpBasic();
+                //.and().httpBasic();
 
 
     }

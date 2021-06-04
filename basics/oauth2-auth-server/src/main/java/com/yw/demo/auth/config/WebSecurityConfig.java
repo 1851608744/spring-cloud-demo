@@ -74,16 +74,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // 签名成功后可访问
                 .antMatchers("/oauth/**").authenticated()
+
                 .and().authorizeRequests()
-                .antMatchers("/oauth/**").authenticated()
+
                 //其他没有限定的请求
                 .anyRequest().permitAll()
                 //对于没有限定的其他请求允许匿名访问
-                .and().anonymous()
+                .and().anonymous();
                 //使用spring security 默认的登录页面
-                .and().formLogin().permitAll()
+                //.and().formLogin().permitAll()
                 //启用http 基础验证
-                .and().httpBasic();
+                //.and().httpBasic();
 
         //// 不拦截 oauth 开发的资源
         //http.csrf().disable();

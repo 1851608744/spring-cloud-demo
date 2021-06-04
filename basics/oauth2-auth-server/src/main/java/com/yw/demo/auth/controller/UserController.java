@@ -18,12 +18,12 @@ public class UserController {
     @Autowired
     private SysUserService sysUserService;
 
-    @GetMapping("/getUserDetails")
+    @GetMapping("/querySysUserInfo")
     public SysUserDto getUserDetails(@RequestParam("username") String username) {
         return sysUserService.querySysUserInfo(username);
     }
 
-    @GetMapping("/details")
+    @GetMapping("/detail")
     public String details() {
         return sysUserService.getDetails();
     }

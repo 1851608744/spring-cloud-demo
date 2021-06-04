@@ -37,8 +37,20 @@ security:
       ## 从认证授权中心上验证token
       token-info-uri: http://localhost:8080/oauth/check_token
       prefer-token-info: true
+    client:
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8091/oauth/authorize
+      grant-type: authorization_code
+      scope: "all"
 
 feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        #只打印基本信息，包括请求方法、请求地址、响应状态码、请求时长
+        loggerLevel: basic
   httpclient:
     connection-timeout: 3000
     enabled: false
