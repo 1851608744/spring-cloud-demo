@@ -40,8 +40,6 @@ security:
     client:
       access-token-uri: http://localhost:8080/oauth/token
       user-authorization-uri: http://localhost:8091/oauth/authorize
-      grant-type: authorization_code
-      scope: "all"
 
 feign:
   client:

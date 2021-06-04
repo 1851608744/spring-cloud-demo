@@ -26,6 +26,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private SysUserService sysUserService;
 
     @Transactional
+    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         // 通过账号获取用户信息

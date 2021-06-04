@@ -16,7 +16,7 @@ import java.util.List;
 public class SysUserDto {
 
     private int id;
-    private String username;
+    private String name;
     private String password;
     private List<String> roles;
 
