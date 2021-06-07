@@ -7,11 +7,15 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 
 /**
+ * ResourceServerConfigurerAdapter是在默认情况下spring security oauth2的http配置
+ * WebSecurityConfigurerAdapter的拦截优先于ResourceServerConfigurerAdapter
  * @author yangwei
  * @data 2021/06/01
  **/
 @Configuration
-//使用order属性，设置该类在spring容器中的加载顺序
+/**
+ * 使用order属性，设置该类在spring容器中的加载顺序 值越小优先级越高
+ */
 @Order(6)
 //这个类表明了此应用是OAuth2 的资源服务器，此处主要指定了受资源服务器保护的资源链接
 @EnableResourceServer
@@ -24,7 +28,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 //限定签名成功的请求
                 .authorizeRequests()
                 //必须认证过后才可以访问
-                .antMatchers("/test/**","/admin/**").authenticated()
+                .antMatchers("/admin/**").authenticated()
                 // /decision/** /govern/** 需要 USER ADMIN 权限
                 .antMatchers("/decision/**","/govern/**").hasAnyRole("USER","ADMIN")
                 // /admin/** 需要 ADMIN 权限

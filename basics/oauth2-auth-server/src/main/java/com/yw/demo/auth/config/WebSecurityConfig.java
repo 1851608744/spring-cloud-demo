@@ -1,6 +1,7 @@
 package com.yw.demo.auth.config;
 
 import com.yw.demo.auth.service.impl.UserDetailsServiceImpl;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -14,11 +15,17 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
+ * WebSecurityConfigurerAdapter是默认情况下springSecurity的http配置
+ * 可以实现的功能
+ * 1.要求用户在进入你的应用的任何URL之前都进行验证
+ * 2.创建一个用户名是“user”，密码是“password”，角色是“ROLE_USER”的用户
+ * 3.启用http Basic和基于表单的验证
+ * 4.SpringSecurity将会自动生成一个登录页面和登出成功页面
  * @author yangwei
  * @data 2021/06/01
  **/
-@Configuration
 @Order(2)
+@Configuration
 @EnableWebSecurity
 /**
  * 需要保护/oauth/authorize以及/oauth/confirm_access这两个endpoint，当然主要是/oauth/authorize这个。

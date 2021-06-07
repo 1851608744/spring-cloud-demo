@@ -36,22 +36,22 @@ public class UserController {
     private SysUserService sysUserService;
 
 
-    //@ApiOperation(value = "添加用户")
-    //@GetMapping("/saveUser")
-    //public String saveUser(@ApiParam(value = "用户对象") @RequestBody User user) {
-    //    userService.saveUser(user);
-    //    return "success";
-    //}
-    //
-    //
-    //@ApiOperation("用户登录接口")
-    //@GetMapping("/queryUser")
-    //public User login(@ApiParam(value = "用户登录信息") @RequestBody User user) {
-    //    return userService.queryUser(user);
-    //}
-    //
-    //
-    //
+    @ApiOperation(value = "添加用户")
+    @GetMapping("/saveUser")
+    public String saveUser(@ApiParam(value = "用户对象") @RequestBody User user) {
+        userService.saveUser(user);
+        return "success";
+    }
+
+
+    @ApiOperation("用户登录接口")
+    @GetMapping("/queryUser")
+    public User login(@ApiParam(value = "用户登录信息") @RequestBody User user) {
+        return userService.queryUser(user);
+    }
+
+
+
     @ApiOperation("用户登录授权信息")
     @GetMapping("/querySysUserInfo")
     public SysUserDto querySysUserByName(@ApiParam(value = "用户名称")
