@@ -24,19 +24,19 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 //限定签名成功的请求
                 .authorizeRequests()
                 //必须认证过后才可以访问
-                //.antMatchers("/test/**","/admin/**").authenticated()
+                .antMatchers("/test/**","/admin/**").authenticated()
                 // /decision/** /govern/** 需要 USER ADMIN 权限
-                //.antMatchers("/decision/**","/govern/**").hasAnyRole("USER","ADMIN")
+                .antMatchers("/decision/**","/govern/**").hasAnyRole("USER","ADMIN")
                 // /admin/** 需要 ADMIN 权限
-                //.antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/admin/**").hasRole("ADMIN")
                 //其他没有限定的请求，允许随意访问
                 .anyRequest().permitAll()
                 //对于没有配置权限的其他请求允许匿名访问
-                .and().anonymous();
+                .and().anonymous()
                 //使用spring security 默认登录页面
-                //.and().formLogin();
+                .and().formLogin()
                 //启用http基础验证
-                //.and().httpBasic();
+                .and().httpBasic();
 
 
     }

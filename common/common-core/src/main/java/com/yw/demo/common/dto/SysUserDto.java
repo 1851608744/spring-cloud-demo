@@ -11,6 +11,7 @@ import java.util.List;
  * @data 2021/06/03
  **/
 @Data
+// equals方法和 hashCode方法
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 public class SysUserDto {
