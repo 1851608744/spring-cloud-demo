@@ -1,21 +1,25 @@
-server:
-  port: 8082
 spring:
-  application:
-    name: gate-way
+#  main:
+#    web-application-type: reactive
   cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-
     gateway:
       discovery:
         locator:
           enabled: true
-          lower-case-service-id: true
-      routes:
-        - id: routh #id
-          uri: 127.0.0.1:8848/demo-user #请求转发到的地址
-          # 匹配规则
+          lower-case-service-id: true #使用小写service-id
+      routes: #配置路由路径
+          #id唯一
+        - id: user-server
+          uri: lb://user-server
+          #断言
           predicates:
-            - Path=/**
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
+        - id: demo-server
+          uri: lb://demo-server
+          predicates:
+            - Path=/demo/**
+          filters:
+            - StripPrefix=1
+

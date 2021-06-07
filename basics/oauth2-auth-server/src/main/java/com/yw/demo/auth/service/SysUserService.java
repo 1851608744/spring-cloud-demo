@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author yangwei
  * @data 2021/06/03
  **/
-@FeignClient(value = "user")
+@FeignClient(value = "user-server")
 public interface SysUserService {
 
     /**

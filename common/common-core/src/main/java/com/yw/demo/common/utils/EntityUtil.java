@@ -18,7 +18,7 @@ import java.util.Map;
 @SuppressWarnings("hiding")
 public class EntityUtil {
 //    private static final Logger LOGGER = LoggerFactory.getLogger(EntityUtil.class);
-    
+
 	/**
      **********************************使用前必读*******************
      **
@@ -26,7 +26,7 @@ public class EntityUtil {
      **
      ***********************************************************
      */
-	
+
     private final String type_char = "char";
 
     private final String type_date = "date";
@@ -44,7 +44,7 @@ public class EntityUtil {
     private final String type_decimal = "decimal";
 
     private final String type_blob = "blob";
-    
+
     /**
      *可根据自己项目路径修改
      */
@@ -52,7 +52,7 @@ public class EntityUtil {
     private final String moduleName = "com.yw.demo"; // 对应模块名称（根据自己模块做相应调整!!!务必修改^_^）
     private final String bean_package =  moduleName + ".domain";
     private final String mapper_package = moduleName + ".mapper";
-    
+
     //domain-mapper-xml  文件生成位置
     private final String bean_path = "D:\\work Space\\自动生成MyBatis文件";
 
@@ -166,7 +166,7 @@ public class EntityUtil {
         }
         return sb.toString();
     }
-    
+
     /**
      **********************************使用前必读*******************
      **

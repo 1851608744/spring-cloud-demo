@@ -67,7 +67,7 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping("/detail")
+    @RequestMapping("/user/hello")
     public String hello() {
         return "hello";
     }

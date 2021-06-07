@@ -1,10 +1,11 @@
 server:
-  port: 9527
+  port: 8082
 spring:
   application:
-    name: nacos-server
+    name: gateway-server
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+
 debug: true

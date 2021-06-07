@@ -12,6 +12,7 @@
         <module name="basics-nacos-config" />
         <module name="basics-nacos-server" />
         <module name="common-core" />
+        <module name="mybatis" />
         <module name="oauth2-auth-server" />
         <module name="rabbitmq" />
         <module name="swagger" />
