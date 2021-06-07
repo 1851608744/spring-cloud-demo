@@ -1,5 +1,7 @@
 package com.yw.demo.controller;
 
+import com.yw.demo.aspect.LogController;
+import com.yw.demo.aspect.TimeConsuming;
 import com.yw.demo.common.dto.SysUserDto;
 import com.yw.demo.domain.SysPermission;
 import com.yw.demo.domain.SysUser;
@@ -44,9 +46,10 @@ public class UserController {
     }
 
 
+    @TimeConsuming
     @ApiOperation("用户登录接口")
     @GetMapping("/queryUser")
-    public User login(@ApiParam(value = "用户登录信息") @RequestBody User user) {
+    public User login(@ApiParam(value = "用户登录信息") @RequestBody User user ) {
         return userService.queryUser(user);
     }
 

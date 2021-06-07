@@ -1,5 +1,6 @@
 package com.yw.demo.aop;
 
+import com.yw.demo.aspect.AspectDemo;
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -11,7 +12,9 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * @author yangwei
@@ -32,32 +35,39 @@ public class AopTest {
 
     }
 
-
-
     /**
-     * 前置通知：在连接点之前执行的通知
-     * @param joinPoint
-     * @throws Throwable
+     * 实现注解功能
      */
-    @Before("webLog()")
-    public void doBefore(JoinPoint joinPoint) throws Throwable {
-        System.out.println("前置通知");
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
+    @Pointcut("@annotation(com.yw.demo.aspect.AspectDemo)")
+    public void demoPoint() {
 
-        log.info("URL: " + request.getRequestURL().toString());
-        log.info("HTTP_MEtHOD: " + request.getMethod());
-        log.info("IP: " + request.getRemoteAddr());
-        log.info("CLASS_METHOD: " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        log.info("ARGS: " + Arrays.toString(joinPoint.getArgs()));
     }
 
 
 
-    @AfterReturning(returning = "ret", pointcut = "webLog()")
-    public void doAfterReturning(Object ret) throws Throwable {
-        System.out.println("后置返回通知");
-        //处理完请求，返回内容
-        log.info("RESPONSE: " + ret);
+        /**
+         * 前置通知：在连接点之前执行的通知
+         * @param joinPoint
+         * @throws Throwable
+         */
+        @Before("webLog()")
+        public void doBefore (JoinPoint joinPoint) throws Throwable {
+            System.out.println("前置通知");
+            ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+            HttpServletRequest request = attributes.getRequest();
+
+            log.info("URL: " + request.getRequestURL().toString());
+            log.info("HTTP_MEtHOD: " + request.getMethod());
+            log.info("IP: " + request.getRemoteAddr());
+            log.info("CLASS_METHOD: " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+            log.info("ARGS: " + Arrays.toString(joinPoint.getArgs()));
+        }
+
+
+        @AfterReturning(returning = "ret", pointcut = "webLog()")
+        public void doAfterReturning (Object ret) throws Throwable {
+            System.out.println("后置返回通知");
+            //处理完请求，返回内容
+            log.info("RESPONSE: " + ret);
+        }
     }
-}
