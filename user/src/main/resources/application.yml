@@ -73,7 +73,6 @@ mq:
       error:
         routing:
           key: log.error.routing.key
-debug: true
 logging:
   level:
     com.yw.demo.mapper: debug

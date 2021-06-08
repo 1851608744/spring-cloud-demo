@@ -21,7 +21,7 @@ import java.util.Objects;
  * @data 2021/06/03
  **/
 @Log4j2
-@Aspect
+//@Aspect
 @Component
 public class AopTest {
 

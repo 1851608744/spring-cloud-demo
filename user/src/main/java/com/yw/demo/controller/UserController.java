@@ -1,24 +1,21 @@
 package com.yw.demo.controller;
 
-import com.yw.demo.aspect.LogController;
 import com.yw.demo.aspect.TimeConsuming;
 import com.yw.demo.common.dto.SysUserDto;
-import com.yw.demo.domain.SysPermission;
-import com.yw.demo.domain.SysUser;
 import com.yw.demo.domain.User;
+import com.yw.demo.rabbitmq.sender.ImmediateSender;
 import com.yw.demo.rabbitmq.sender.Sender;
-import com.yw.demo.service.PermissionService;
+import com.yw.demo.rabbitmq.sender.XdelaySender;
 import com.yw.demo.service.SysUserService;
 import com.yw.demo.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author yangwei
@@ -30,6 +27,12 @@ public class UserController {
 
     @Autowired
     private Sender sender;
+
+    @Autowired
+    private ImmediateSender immediateSender;
+
+    @Autowired
+    private XdelaySender xdelaySender;
 
     @Resource
     private UserService userService;
@@ -113,5 +116,31 @@ public class UserController {
         return "ok";
     }
 
+    @GetMapping("/tllQueue")
+    public String tllQueue() {
+        immediateSender.send("延迟消息", 300);
+        //让服务一直挂起， 不然接收消息是，服务已经停了
+        while (true) {
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @GetMapping("/xDelayQueue")
+    public String xDelayQueue() {
+        xdelaySender.send("测试消息，10秒", 10000);
+        xdelaySender.send("测试消息，5秒", 5000);
+        xdelaySender.send("测试消息，1秒", 1000);
+        while (true) {
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
 }
