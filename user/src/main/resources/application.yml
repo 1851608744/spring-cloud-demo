@@ -76,3 +76,4 @@ mq:
 logging:
   level:
     com.yw.demo.mapper: debug
+

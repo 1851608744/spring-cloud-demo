@@ -1,0 +1,49 @@
+#spring:
+#  kafka:
+#    bootstrap-servers: 159.75.123.53:9092
+#    producer:
+##      bootstrap-servers: 159.75.123.53:9092
+#      #重试次数
+#      retries: 0
+#      #应答级别：多少个分区副本备份完成时向生产者发送ack确认（可选0、1、all/-1）
+#      acks: 1
+#      #批量大小
+#      batch-size: 16384
+#      #提交延时
+#      #当生产端积累的消息达到batch-size或接收消息linger.ms后，生产者就会将消息交给kafka
+#      #linger.ms为0表示每接受一条消息就提交给kafka,这时候batch-size其实就没用了
+#      properties:
+#        linger:
+#          ms: 0
+#        #自定义分区器
+#        partitioner:
+#          class: com.felix.kafka.producer.CustomizePartitioner
+#      #生产端缓冲区大小
+#      buffer-memory: 33664432
+#      #kafka提供的序列化和反序列化
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#    consumer:
+#      group-id: myGroup
+##      bootstrap-servers: 159.75.123.53:9092
+#      auto-offset-reset: earliest
+#      enable-auto-commit: true
+#      properties:
+#        #消费会话超时时间(超过这个时间consumer没有发送心跳,就会触发rebalance操作)
+#        session:
+#          timeout:
+#            ms: 120000
+#        #消费请求超时时间
+#        request:
+#          timeout:
+#            ms: 180000
+#      #kafka提供的序列化和反序列化类
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      #批量消费每次最多消费多少条消息
+##      max-poll-records: 50
+#    listener:
+#      #消费端监听的topic不存在时,项目启动会报错(关掉)
+#      missing-topics-fatal: false
+#      #设置批量消费
+##      type: batch

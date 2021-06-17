@@ -48,7 +48,12 @@ feign:
         connectTimeout: 5000
         readTimeout: 5000
         #只打印基本信息，包括请求方法、请求地址、响应状态码、请求时长
-        loggerLevel: basic
+        #feign全局日志打印级别
+        #NONE（默认）  不记录任何日志
+        #BASIC  仅记录请求方法，URL，响应状态代码以及执行时间（适合生产环境）
+        #HEADERS  记录BASIC级别的基础上，记录请求和响应的header
+        #FULL   记录请求和响应header，body和元数据
+        loggerLevel: BASIC
   httpclient:
     connection-timeout: 3000
     enabled: false
