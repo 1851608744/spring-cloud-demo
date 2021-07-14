@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,5 +21,8 @@ public class SysUserDto {
     private String name;
     private String password;
     private List<String> roles;
+    private Date updateDate;
+    private Date createDate;
+
 
 }

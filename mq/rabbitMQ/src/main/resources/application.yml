@@ -1,0 +1,43 @@
+server:
+  port: 8094
+spring:
+  application:
+    name: rabbitMQ
+
+  ## rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test_virtual
+    #消息确认配置项
+    #确认消息已发送到交换机（Exchange）
+    #publisher-confirms: true
+    #确认消息已发送到队列（Queue）
+    publisher-returns: true
+    #开启消息确认机制confirm异步
+    publisher-confirm-type: correlated
+    listener:
+      direct:
+        #消息开启手动确认
+        acknowledge-mode: manual
+
+mq:
+  config:
+    exchange:
+      fanout: fanoutExchange
+      topic: topicExchange
+    queue:
+      fanoutA: fanout.A
+      fanoutB: fanout.B
+      fanoutC: fanout.C
+      man:
+        routing:
+          key: topic.man
+      woman:
+        routing:
+          key: topic.woman
+      error:
+        routing:
+          key: log.error.routing.key

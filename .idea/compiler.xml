@@ -7,19 +7,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rocketMQ" />
         <module name="basics-gateway" />
-        <module name="basics-kafka" />
-        <module name="basics-nacos-config" />
-        <module name="basics-nacos-server" />
-        <module name="common-core" />
         <module name="mybatis" />
-        <module name="oauth2-auth-server" />
-        <module name="rabbitmq" />
-        <module name="swagger" />
-        <module name="user" />
+        <module name="basics-kafka" />
         <module name="user-service" />
+        <module name="demo" />
+        <module name="rabbitMQ" />
+        <module name="swagger" />
+        <module name="basics-sentinel" />
+        <module name="basics-rocketmq" />
+        <module name="basics-nacos-config" />
+        <module name="oauth2-auth-server" />
+        <module name="basics-nacos-server" />
+        <module name="user" />
+        <module name="common-core" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="rabbitmq" target="1.8" />
+      <module name="rabbitMQ" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

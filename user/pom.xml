@@ -26,7 +26,7 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
+            <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
@@ -54,10 +54,6 @@
         <!--</dependency>-->
 
         <!--rabbitmq-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

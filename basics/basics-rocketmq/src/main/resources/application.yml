@@ -1,0 +1,11 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: basics-rocketmq
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: consumer0
