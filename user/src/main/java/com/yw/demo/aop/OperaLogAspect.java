@@ -1,22 +1,13 @@
 package com.yw.demo.aop;
 
-import com.yw.demo.aspect.LogController;
-import com.yw.demo.common.dto.SysUserDto;
-import com.yw.demo.common.utils.DateTimeUtil;
+
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.util.Objects;
 
 /**
  * @author yangwei
@@ -47,7 +38,7 @@ public class OperaLogAspect {
      */
     @Before(value = "methodTimePoint()")
     public void beforeTime() {
-        log.info("************************" + DateTimeUtil.getCurrDateTimeStr() + "************************");
+        //log.info("************************" + DateTimeUtil.getCurrDateTimeStr() + "************************");
     }
 
     //@Before(value = "annotationPoint() && @annotation(logController)", argNames = "joinPoint, logController")

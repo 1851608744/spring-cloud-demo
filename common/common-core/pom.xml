@@ -24,13 +24,6 @@
             <version>3.4</version>
         </dependency>
 
-        <!--mysql jdbc驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-
         <!--spring boot整合redis-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,12 +55,7 @@
             <version>1.2.70</version>
         </dependency>
 
-        <!--Swagger整合-->
-        <dependency>
-            <groupId>com.spring4all</groupId>
-            <artifactId>swagger-spring-boot-starter</artifactId>
-            <version>1.9.1.RELEASE</version>
-        </dependency>
+
 
     </dependencies>
 

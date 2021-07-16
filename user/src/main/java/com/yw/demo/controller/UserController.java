@@ -6,7 +6,6 @@ import com.yw.demo.domain.User;
 //import com.yw.demo.sender.ImmediateSender;
 //import com.yw.demo.sender.Sender;
 //import com.yw.demo.sender.XdelaySender;
-import com.yw.demo.sender.Sender;
 import com.yw.demo.service.SysUserService;
 import com.yw.demo.service.UserService;
 import io.swagger.annotations.Api;
@@ -25,17 +24,6 @@ import javax.annotation.Resource;
 @RestController
 public class UserController {
 
-    //@Autowired
-    //private Sender sender;
-
-    //@Autowired
-    //private ImmediateSender immediateSender;
-    //
-    //@Autowired
-    //private XdelaySender xdelaySender;
-
-    @Autowired
-    private Sender sender;
 
     @Resource
     private UserService userService;
@@ -83,78 +71,8 @@ public class UserController {
         return "login" + user;
     }
 
-    @GetMapping("/rocketmq/send/insert")
-    public String rocketmqInsert(@RequestBody User user) {
-        sender.insert(user);
-        return "Insert OK!";
-    }
 
-    public String rocketmqUpdate(@RequestBody User user) {
-        sender.update(user);
-        return "Update OK!";
-    }
 
-    //@GetMapping("/send")
-    //public String sendDirectMessage() {
-    //    sender.send("TestDirectExchange","TestDirectRouting");
-    //    return "ok";
-    //}
-    //
-    //@GetMapping("/topic-man")
-    //public String topicMan() {
-    //    sender.sendTopicMessage1();
-    //    return "ok";
-    //}
-    //
-    //@GetMapping("/topic-woman")
-    //public String topicWoman() {
-    //    sender.sendTopicMessage2();
-    //    return "ok";
-    //}
-    //
-    //@GetMapping("/fanout")
-    //public String fanout() {
-    //    sender.sendFanoutMessage();
-    //    return "ok";
-    //}
-    //
-    //@GetMapping("/testMsgAck")
-    //public String testMsgAck() {
-    //    sender.send("no-existent", null);
-    //    return "ok";
-    //}
-    //
-    //@GetMapping("/noQueue")
-    //public String noQueue() {
-    //    sender.send("lonelyDirectExchange", "TestDirectRouting");
-    //    return "ok";
-    //}
 
-    //@GetMapping("/tllQueue")
-    //public String tllQueue() {
-    //    immediateSender.send("延迟消息", 300);
-    //    //让服务一直挂起， 不然接收消息是，服务已经停了
-    //    while (true) {
-    //        try {
-    //            TimeUnit.SECONDS.sleep(1);
-    //        } catch (InterruptedException e) {
-    //            e.printStackTrace();
-    //        }
-    //    }
-    //}
-    //
-    //@GetMapping("/xDelayQueue")
-    //public String xDelayQueue() {
-    //    xdelaySender.send("测试消息，10秒", 10000);
-    //    xdelaySender.send("测试消息，5秒", 5000);
-    //    xdelaySender.send("测试消息，1秒", 1000);
-    //    while (true) {
-    //        try {
-    //            TimeUnit.SECONDS.sleep(1);
-    //        } catch (InterruptedException e) {
-    //            e.printStackTrace();
-    //        }
-    //    }
-    //}
 
 }

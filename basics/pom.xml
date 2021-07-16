@@ -16,11 +16,10 @@
         <module>basics-nacos-config</module>
         <module>basics-gateway</module>
         <module>basics-kafka</module>
-        <module>rabbitmq</module>
+        <module>basics-rabbitmq</module>
         <module>oauth2-auth-server</module>
         <module>basics-sentinel</module>
         <module>basics-rocketmq</module>
     </modules>
-
 
 </project>

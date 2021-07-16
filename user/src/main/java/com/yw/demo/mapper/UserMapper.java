@@ -1,5 +1,6 @@
 package com.yw.demo.mapper;
 import java.util.List;
+
 import com.yw.demo.domain.User;
 import org.apache.ibatis.annotations.Param;
 
@@ -9,7 +10,7 @@ import org.apache.ibatis.annotations.Param;
  * 
  **/
 
-public interface UserMapper{
+public interface UserMapper {
 
 
 	/**

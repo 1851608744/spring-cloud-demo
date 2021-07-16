@@ -1,0 +1,18 @@
+server:
+  port: 8096
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+
+## mybatis扫包配置
+mybatis:
+  mapperLocations: classpath:/mybatis/*Mapper.xml
+  type-aliases-package: com.yw.demo
+
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/*Mapper.xml
+  type-aliases-package: com.yw.demo
+

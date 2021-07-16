@@ -1,4 +1,4 @@
-package com.yw.demo.common.dto;
+package com.yw.demo.dto;
 
 import lombok.Builder;
 import lombok.Data;

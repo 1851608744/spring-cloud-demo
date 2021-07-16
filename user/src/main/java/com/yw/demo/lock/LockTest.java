@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @author yangwei
  * @data 2021/06/07
  **/
-public class Test {
+public class LockTest {
 
     static Map<String, Object> map = new HashMap<>();
     static ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
@@ -44,8 +44,6 @@ public class Test {
         }
     }
 
-    public static void main(String[] args) {
 
-    }
 
 }

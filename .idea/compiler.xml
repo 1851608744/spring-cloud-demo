@@ -13,6 +13,7 @@
         <module name="basics-kafka" />
         <module name="user-service" />
         <module name="demo" />
+        <module name="basics-rabbitmq" />
         <module name="rabbitMQ" />
         <module name="swagger" />
         <module name="basics-sentinel" />
@@ -21,12 +22,11 @@
         <module name="oauth2-auth-server" />
         <module name="basics-nacos-server" />
         <module name="user" />
+        <module name="mybatis-plus" />
+        <module name="dto" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="rabbitmq" target="1.8" />
-      <module name="rabbitMQ" target="8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

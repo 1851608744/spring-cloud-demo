@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yw.demo.mapper.UserMapper">
+
+	<!--实体映射-->
+	<resultMap id="BaseResultMap" type="com.yw.demo.domain.User">
+		<id property="id" column="id" />
+		<result property="userAccount" column="user_account" />
+		<result property="userPassword" column="user_password" />
+		<result property="userName" column="user_name" />
+		<result property="userAge" column="user_age" />
+		<result property="userAddr" column="user_addr" />
+		<result property="delFlag" column="del_flag" />
+		<result property="updateTime" column="update_time" />
+		<result property="createTime" column="create_time" />
+		<result property="role" column="role" />
+	</resultMap>
+
+
+	<!-- 通用查询结果列-->
+	<sql id="Base_Column_List">
+		 id,	user_account,	user_password,	user_name,	user_age,	user_addr,	del_flag,	update_time,	create_time,	role
+	</sql>
+
+
+
+
+	<!-- 简单查询 -->
+	<select id="getListByCondition" resultMap="BaseResultMap" resultType="com.yw.demo.domain.User">
+		 SELECT
+		 <include refid="Base_Column_List" />
+		 FROM user where del_flag = 0 
+		 <if test=" user != null">
+			<if test="user.id != null">
+			   and id = #{user.id}
+			</if>
+			<if test="user.userAccount != null">
+			   and user_account = #{user.userAccount}
+			</if>
+			<if test="user.userPassword != null">
+			   and user_password = #{user.userPassword}
+			</if>
+			<if test="user.userName != null">
+			   and user_name = #{user.userName}
+			</if>
+			<if test="user.userAge != null">
+			   and user_age = #{user.userAge}
+			</if>
+			<if test="user.userAddr != null">
+			   and user_addr = #{user.userAddr}
+			</if>
+			<if test="user.delFlag != null">
+			   and del_flag = #{user.delFlag}
+			</if>
+			<if test="user.updateTime != null">
+			   and update_time = #{user.updateTime}
+			</if>
+			<if test="user.createTime != null">
+			   and create_time = #{user.createTime}
+			</if>
+			<if test="user.role != null">
+			   and role = #{user.role}
+			</if>
+		 </if>
+	</select>
+
+
+	<!-- 数量查询 -->
+	<select id="getCountByCondition" resultType="java.lang.Integer">
+		 SELECT
+		 count(id) 
+		 FROM user where del_flag = 0 
+		 <if test=" user != null">
+			<if test="user.id != null">
+			   and id = #{user.id}
+			</if>
+			<if test="user.userAccount != null">
+			   and user_account = #{user.userAccount}
+			</if>
+			<if test="user.userPassword != null">
+			   and user_password = #{user.userPassword}
+			</if>
+			<if test="user.userName != null">
+			   and user_name = #{user.userName}
+			</if>
+			<if test="user.userAge != null">
+			   and user_age = #{user.userAge}
+			</if>
+			<if test="user.userAddr != null">
+			   and user_addr = #{user.userAddr}
+			</if>
+			<if test="user.delFlag != null">
+			   and del_flag = #{user.delFlag}
+			</if>
+			<if test="user.updateTime != null">
+			   and update_time = #{user.updateTime}
+			</if>
+			<if test="user.createTime != null">
+			   and create_time = #{user.createTime}
+			</if>
+			<if test="user.role != null">
+			   and role = #{user.role}
+			</if>
+		 </if>
+	</select>
+
+	<!-- 添加 （匹配有值的字段）-->
+	<insert id="insertSelective" parameterType="com.yw.demo.domain.User">
+		 INSERT INTO user
+		 <trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null">
+				 id,
+			</if>
+			<if test="userAccount != null">
+				 user_account,
+			</if>
+			<if test="userPassword != null">
+				 user_password,
+			</if>
+			<if test="userName != null">
+				 user_name,
+			</if>
+			<if test="userAge != null">
+				 user_age,
+			</if>
+			<if test="userAddr != null">
+				 user_addr,
+			</if>
+			<if test="delFlag != null">
+				 del_flag,
+			</if>
+			<if test="updateTime != null">
+				 update_time,
+			</if>
+			<if test="createTime != null">
+				 create_time,
+			</if>
+			<if test="role != null">
+				 role,
+			</if>
+
+		 </trim>
+		 <trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id!=null">
+				 #{id},
+			</if>
+			<if test="userAccount!=null">
+				 #{userAccount},
+			</if>
+			<if test="userPassword!=null">
+				 #{userPassword},
+			</if>
+			<if test="userName!=null">
+				 #{userName},
+			</if>
+			<if test="userAge!=null">
+				 #{userAge},
+			</if>
+			<if test="userAddr!=null">
+				 #{userAddr},
+			</if>
+			<if test="delFlag!=null">
+				 #{delFlag},
+			</if>
+			<if test="updateTime!=null">
+				 #{updateTime},
+			</if>
+			<if test="createTime!=null">
+				 #{createTime},
+			</if>
+			<if test="role!=null">
+				 #{role},
+			</if>
+		 </trim>
+	</insert>
+
+	<!-- 修 改-->
+	<update id="updateByPrimaryKeySelective" parameterType="com.yw.demo.domain.User">
+		 UPDATE user
+ 		 <set> 
+			<if test="userAccount != null">
+				 user_account = #{userAccount},
+			</if>
+			<if test="userPassword != null">
+				 user_password = #{userPassword},
+			</if>
+			<if test="userName != null">
+				 user_name = #{userName},
+			</if>
+			<if test="userAge != null">
+				 user_age = #{userAge},
+			</if>
+			<if test="userAddr != null">
+				 user_addr = #{userAddr},
+			</if>
+			<if test="delFlag != null">
+				 del_flag = #{delFlag},
+			</if>
+			<if test="updateTime != null">
+				 update_time = #{updateTime},
+			</if>
+			<if test="createTime != null">
+				 create_time = #{createTime},
+			</if>
+			<if test="role != null">
+				 role = #{role},
+			</if>
+
+ 		 </set>
+		 WHERE id = #{id}
+	</update>
+
+
+
+
+
+
+</mapper>

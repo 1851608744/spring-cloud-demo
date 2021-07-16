@@ -17,14 +17,14 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        System.out.println("MyBeanFactoryPostProcessor 开始执行 ");
-        String[] beanDefinitionNames = beanFactory.getBeanDefinitionNames();
-        for (String name : beanDefinitionNames) {
-            if ("user".equals(name)) {
-                BeanDefinition beanDefinition = beanFactory.getBeanDefinition(name);
-                MutablePropertyValues propertyValues = beanDefinition.getPropertyValues();
-                propertyValues.add("name", "Jack");
-            }
-        }
+        //System.out.println("MyBeanFactoryPostProcessor 开始执行 ");
+        //String[] beanDefinitionNames = beanFactory.getBeanDefinitionNames();
+        //for (String name : beanDefinitionNames) {
+        //    if ("user".equals(name)) {
+        //        BeanDefinition beanDefinition = beanFactory.getBeanDefinition(name);
+        //        MutablePropertyValues propertyValues = beanDefinition.getPropertyValues();
+        //        propertyValues.add("name", "Jack");
+        //    }
+        //}
     }
 }
