@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yw.demo.mapper.SysPermissionMapper">
+
+	<!--实体映射-->
+	<resultMap id="BaseResultMap" type="com.yw.demo.domain.SysPermission">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="descritpion" column="descritpion" />
+		<result property="url" column="url" />
+		<result property="pid" column="pid" />
+	</resultMap>
+
+
+	<!-- 通用查询结果列-->
+	<sql id="Base_Column_List">
+		 id,	name,	descritpion,	url,	pid
+	</sql>
+
+	<!-- 查询（根据主键ID查询） -->
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+		 SELECT
+		 <include refid="Base_Column_List" />
+		 FROM sys_permission
+		 WHERE id = #{id}
+	</select>
+
+	<!-- 分页查询 -->
+	<select id="getByPage" resultMap="BaseResultMap" resultType="com.yw.demo.domain.SysPermission">
+		 SELECT
+		 <include refid="Base_Column_List" />
+		 FROM sys_permission where del_flag =0 
+		 <if test=" sysPermission != null">
+			<if test="sysPermission.id != null">
+			   and id = #{sysPermission.id}
+			</if>
+			<if test="sysPermission.name != null">
+			   and name = #{sysPermission.name}
+			</if>
+			<if test="sysPermission.descritpion != null">
+			   and descritpion = #{sysPermission.descritpion}
+			</if>
+			<if test="sysPermission.url != null">
+			   and url = #{sysPermission.url}
+			</if>
+			<if test="sysPermission.pid != null">
+			   and pid = #{sysPermission.pid}
+			</if>
+		 </if>
+		 <if test="orderColumn != null">
+			 order by ${orderColumn} 
+		 </if>
+		 <if test="orderType != null">
+			 ${orderType} 
+		 </if>
+		 <if test="start != null and limit != null">
+			 limit #{start}, #{limit}
+		 </if>
+	</select>
+
+	<!-- 简单查询 -->
+	<select id="getListByCondition" resultMap="BaseResultMap" resultType="com.yw.demo.domain.SysPermission">
+		 SELECT
+		 <include refid="Base_Column_List" />
+		 FROM sys_permission where del_flag = 0 
+		 <if test=" sysPermission != null">
+			<if test="sysPermission.id != null">
+			   and id = #{sysPermission.id}
+			</if>
+			<if test="sysPermission.name != null">
+			   and name = #{sysPermission.name}
+			</if>
+			<if test="sysPermission.descritpion != null">
+			   and descritpion = #{sysPermission.descritpion}
+			</if>
+			<if test="sysPermission.url != null">
+			   and url = #{sysPermission.url}
+			</if>
+			<if test="sysPermission.pid != null">
+			   and pid = #{sysPermission.pid}
+			</if>
+		 </if>
+	</select>
+
+	<!-- 单条查询 -->
+	<select id="getOneByCondition" resultMap="BaseResultMap" resultType="com.yw.demo.domain.SysPermission">
+		 SELECT
+		 <include refid="Base_Column_List" />
+		 FROM sys_permission where del_flag = 0 
+		 <if test=" sysPermission != null">
+			<if test="sysPermission.id != null">
+			   and id = #{sysPermission.id}
+			</if>
+			<if test="sysPermission.name != null">
+			   and name = #{sysPermission.name}
+			</if>
+			<if test="sysPermission.descritpion != null">
+			   and descritpion = #{sysPermission.descritpion}
+			</if>
+			<if test="sysPermission.url != null">
+			   and url = #{sysPermission.url}
+			</if>
+			<if test="sysPermission.pid != null">
+			   and pid = #{sysPermission.pid}
+			</if>
+		 </if>
+	</select>
+
+	<!-- 数量查询 -->
+	<select id="getCountByCondition" resultType="java.lang.Integer">
+		 SELECT
+		 count(id) 
+		 FROM sys_permission where del_flag = 0 
+		 <if test=" sysPermission != null">
+			<if test="sysPermission.id != null">
+			   and id = #{sysPermission.id}
+			</if>
+			<if test="sysPermission.name != null">
+			   and name = #{sysPermission.name}
+			</if>
+			<if test="sysPermission.descritpion != null">
+			   and descritpion = #{sysPermission.descritpion}
+			</if>
+			<if test="sysPermission.url != null">
+			   and url = #{sysPermission.url}
+			</if>
+			<if test="sysPermission.pid != null">
+			   and pid = #{sysPermission.pid}
+			</if>
+		 </if>
+	</select>
+
+	<!-- 添加 -->
+	<insert id="insert" parameterType="com.yw.demo.domain.SysPermission">
+		 INSERT INTO sys_permission
+ 		(id,name,descritpion,url,pid) 
+		 VALUES 
+ 		(#{id},#{name},#{descritpion},#{url},#{pid}) 
+	</insert>
+
+	<!-- 添加 （匹配有值的字段）-->
+	<insert id="insertSelective" parameterType="com.yw.demo.domain.SysPermission">
+		 INSERT INTO sys_permission
+		 <trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="id != null">
+				 id,
+			</if>
+			<if test="name != null">
+				 name,
+			</if>
+			<if test="descritpion != null">
+				 descritpion,
+			</if>
+			<if test="url != null">
+				 url,
+			</if>
+			<if test="pid != null">
+				 pid,
+			</if>
+
+		 </trim>
+		 <trim prefix="values (" suffix=")" suffixOverrides="," >
+			<if test="id!=null">
+				 #{id},
+			</if>
+			<if test="name!=null">
+				 #{name},
+			</if>
+			<if test="descritpion!=null">
+				 #{descritpion},
+			</if>
+			<if test="url!=null">
+				 #{url},
+			</if>
+			<if test="pid!=null">
+				 #{pid},
+			</if>
+		 </trim>
+	</insert>
+
+	<!-- 修 改-->
+	<update id="updateByPrimaryKeySelective" parameterType="com.yw.demo.domain.SysPermission">
+		 UPDATE sys_permission
+ 		 <set> 
+			<if test="name != null">
+				 name = #{name},
+			</if>
+			<if test="descritpion != null">
+				 descritpion = #{descritpion},
+			</if>
+			<if test="url != null">
+				 url = #{url},
+			</if>
+			<if test="pid != null">
+				 pid = #{pid},
+			</if>
+
+ 		 </set>
+		 WHERE id = #{id}
+	</update>
+
+
+	<!-- 查询 -->
+	<select id="getNameByUserId" resultType="java.lang.String">
+		SELECT p.name FROM sys_user u
+		left join sys_role_user sru on u.id = sru.Sys_User_id
+		left join sys_role r on sru.Sys_Role_id = r.id
+		LEFT JOIN Sys_permission_role spr on spr.role_id=r.id
+		LEFT JOIN Sys_permission p on p.id =spr.permission_id
+		where u.id = #{userId}
+	</select>
+</mapper>

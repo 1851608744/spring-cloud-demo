@@ -1,0 +1,30 @@
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        #哪怕做了域名也要指定端口，不然获取不到配置，这波操作没看懂
+        server-addr: 127.0.0.1:8848
+#        #这里是命名空间的Id
+#        namespace: zma-cpms
+#        #找管理员分配的账号
+#        username: cpms-sst
+#        password: cpms-sst
+        file-extension: yml
+        #是否需要刷新生效，看各自系统，想生效就搭配@RefreshScope使用吧。不想就把refresh配置去掉，默认false
+        #        refresh: false
+        shared-configs:
+          -
+#          - data-id: cpms-application-test.yml
+#            #            refresh: false
+#
+#          - data-id: application-spring-zma.yml
+#          #            refresh: false
+#
+#          - data-id: application-zk-zma.yml
+#          #            refresh: false
+#
+#          - data-id: application-fastdfs-zma.yml
+#          #            refresh: false

@@ -1,0 +1,12 @@
+server:
+  port: 8095
+spring:
+  application:
+    name: rocketMQ
+
+rocketmq:
+  #对应RocketMQ的Nameserver服务 多个用;分割
+  name-server: 127.0.0.1:9876
+  producer:
+    group: rocket-group
+    send-message-timeout: 3000

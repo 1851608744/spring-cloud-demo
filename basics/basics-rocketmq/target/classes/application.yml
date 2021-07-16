@@ -1,0 +1,14 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: basics-rocketmq
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+rocketmq:
+  #对应RocketMQ的Nameserver服务 多个用;分割
+  name-server: 127.0.0.1:9876
+  producer:
+    group: rocket-group

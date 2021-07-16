@@ -1,0 +1,67 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: user
+
+  ## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/demo_user?&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+
+  ## nacos注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+## mybatis扫包配置
+mybatis:
+  mapperLocations: classpath:/mybatis/*Mapper.xml
+  type-aliases-package: com.yw.demo
+
+#mybatis-plus
+
+
+## security oauth2 认证配置
+#security:
+    ##  oauth2:
+    ##    resource:
+    ##      ## 从认证授权中心上验证token
+    ##      token-info-uri: http://localhost:8080/oauth/check_token
+    ##      prefer-token-info: true
+    ##
+    ##    client:
+    ##      access-token-uri: http://localhost:8080/oauth/token
+    ##      user-authorization-uri: http://localhost:8080/oauth/authorize
+    ##      ## appId
+    ##      client-id: client_1
+  ##      ## appSecret
+  ##      client-secret: 123456
+
+
+
+## security oauth2 认证配置
+#security:
+#  oauth2:
+#    resource:
+#      ## 从认证授权中心上验证token
+#      token-info-uri: http://localhost:8091/oauth/check_token
+#      prefer-token-info: true
+#
+#    client:
+#      access-token-uri: http://localhost:8091/oauth/token
+#      user-authorization-uri: http://localhost:8091/oauth/authorize
+#      ## appId
+#      client-id: client_code
+#      ## appSecret
+#      client-secret: 123456
+
+#logging:
+#  level:
+#    com.yw.demo.mapper: debug
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

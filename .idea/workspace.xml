@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eba0287-443f-4a92-838c-c6e418447753" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/component/mybatis-plus/src/main/java/com/yw/demo/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/component/mybatis/mybatis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/swagger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/mybatis-plus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/component/mybatis-plus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/mybatis-plus/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/component/mybatis-plus/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/component/mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/mybatis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/component/mybatis/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Aspect" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="spring-beans.schema" />
+        <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RunDashboard</find>
+      <find>hhl</find>
+      <find>user.domain.entity.User</find>
+      <find>ResponseDto</find>
+      <find>BCryptPasswordEncoder</find>
+      <find>SysUser</find>
+      <find>user</find>
+      <find>orderGroupJoinQueue</find>
+      <find>clientId</find>
+      <find>passwordEncoder</find>
+      <find>Entry</find>
+      <find>resize</find>
+      <find>ClassPathXmlApplicationContext</find>
+      <find>refresh()</find>
+      <find>refreshBeanFactory()</find>
+      <find>group</find>
+      <find>parent</find>
+      <find>loadClass</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>domain.User</replace>
+      <replace>ResponseDTO</replace>
+      <replace>User</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/common/swagger/src/main/java/com/yw/demo/swagger/config/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/ThreadDemo.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/Calc.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/resources/applicaton.properties" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/common/common-core/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/KafkaApplication.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/yw/demo/spring/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/yw/demo/spring/service/impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/application.xml.fxml" />
+        <option value="$PROJECT_DIR$/user/src/main/resources/application.xml" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/yw/demo/spring/MyBeanFactoryPostProcessor.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/Test.java" />
+        <option value="$PROJECT_DIR$/user/src/main/java/com/yw/demo/spring/ContextDemo.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/HeapTest.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/config/KafkaConfig.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application-test.yml" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/producer/KafkaProducer.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/consumer/KafkaConsumer.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/controller/KafkaController.java" />
+        <option value="$PROJECT_DIR$/basics/basics-kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/oauth2-auth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/basics-nacos-server/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/basics-nacos-config/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/basics-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/SentinelApplication.java" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/pom.xml" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/IpInfoService.java" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/service/IpInfoService.java" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/service/impl/IpInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/controller/SentinelController.java" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/basics/basics-sentinel/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/Test2.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/Test1.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/JVM.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/loadClass.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/JVM.txt" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/LockTest.java" />
+        <option value="$PROJECT_DIR$/user/src/test/java/com/yw/demo/A.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/LockTest.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/lock.txt" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yw/demo/jvm/User.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/LockUpgrade.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yw/demo/jvm/JVM.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\working Tools\JARs" />
+        <option name="mavenHome" value="D:\working Tools\apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\working Tools\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectId" id="1uKXWhWzfW7YxhhtXPgzfyhbpcA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1624239001319" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/component/mybatis-plus/src/main/resources/mybatis" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yw.demo.thread" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work Space\Java\spring-cloud-demo\component\mybatis-plus\src\main\resources\mybatis" />
+      <recent name="D:\work Space\Java\spring-cloud-demo\component\mybatis-plus\src\main\java\com\yw\demo" />
+      <recent name="D:\work Space\Java\spring-cloud-demo\basics\basics-kafka\src\main\resources" />
+      <recent name="D:\work Space\Java\spring-cloud-demo\basics\oauth2-auth-server\src\main\java\com\yw\demo\auth\service" />
+      <recent name="D:\work Space\Java\spring-cloud-demo\user\src\main\resources\mybatis" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.yw.demo.mapper" />
+      <recent name="com.yw.demo.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yw.demo.config" />
+      <recent name="com.yw.demo.common.utils" />
+      <recent name="nacos" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MybatisPlusApplication">
+    <configuration name="GeneratorConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yw.demo.config.GeneratorConfig" />
+      <module name="mybatis-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yw.demo.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yw.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yw.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.yw.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yw.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yw.demo.MybatisPlusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="basics-nacos-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yw.demo.nacos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yw.demo.nacos.NacosServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yw.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yw.demo.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MybatisPlusApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.NacosServerApplication" />
+        <item itemvalue="Application.GeneratorConfig" />
+        <item itemvalue="JUnit.UserMapperTest.testSelect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eba0287-443f-4a92-838c-c6e418447753" name="Default Changelist" comment="" />
+      <created>1622423674499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622423674499</updated>
+      <workItem from="1622423678508" duration="22516000" />
+      <workItem from="1622507984288" duration="18443000" />
+      <workItem from="1622539773082" duration="2321000" />
+      <workItem from="1622595177210" duration="25486000" />
+      <workItem from="1622682025854" duration="1814000" />
+      <workItem from="1622686259658" duration="18447000" />
+      <workItem from="1622767203040" duration="9105000" />
+      <workItem from="1622776463540" duration="18310000" />
+      <workItem from="1623027510594" duration="17181000" />
+      <workItem from="1623053697533" duration="5809000" />
+      <workItem from="1623114082030" duration="19471000" />
+      <workItem from="1623201675637" duration="8492000" />
+      <workItem from="1623285432551" duration="16332000" />
+      <workItem from="1623372214238" duration="957000" />
+      <workItem from="1623717633413" duration="19076000" />
+      <workItem from="1623805050533" duration="6457000" />
+      <workItem from="1623891804111" duration="10668000" />
+      <workItem from="1623977789373" duration="19547000" />
+      <workItem from="1624238239064" duration="713000" />
+      <workItem from="1624415289750" duration="1074000" />
+      <workItem from="1625130653872" duration="3609000" />
+      <workItem from="1625276241895" duration="6921000" />
+      <workItem from="1625473059399" duration="3055000" />
+      <workItem from="1625535069626" duration="12552000" />
+      <workItem from="1625560904778" duration="596000" />
+      <workItem from="1625618400822" duration="962000" />
+      <workItem from="1625815305413" duration="84000" />
+      <workItem from="1625815687502" duration="682000" />
+      <workItem from="1626053669039" duration="11574000" />
+      <workItem from="1626138129460" duration="85000" />
+      <workItem from="1626138228371" duration="5670000" />
+      <workItem from="1626145324591" duration="2227000" />
+      <workItem from="1626154854821" duration="8042000" />
+      <workItem from="1626163350666" duration="8459000" />
+      <workItem from="1626224581600" duration="7099000" />
+      <workItem from="1626243473852" duration="324000" />
+      <workItem from="1626243819303" duration="1589000" />
+      <workItem from="1626245443850" duration="3358000" />
+      <workItem from="1626248847782" duration="6179000" />
+      <workItem from="1626319741777" duration="7669000" />
+      <workItem from="1626337147650" duration="6680000" />
+      <workItem from="1626397510275" duration="17405000" />
+      <workItem from="1626423218694" duration="6251000" />
+      <workItem from="1626429711792" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="Nacos、OAuth2、RabbitMQ">
+      <created>1622627965304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622627965304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Nacos、OAuth2修改(配置注释)、RabbitMQ">
+      <created>1622707615195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622707615196</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Nacos、OAuth2修改(配置注释)、RabbitMQ">
+      <created>1622707917398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622707917398</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Nacos、OAuth2 （密码、授权码、客户端）、RabbitMQ、AOP（未测试）">
+      <created>1622796500966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622796500966</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Nacos、OAuth2 （密码、授权码、客户端）、RabbitMQ、AOP（未测试）">
+      <created>1622797778997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622797778997</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Nacos、OAuth2 （密码、授权码、客户端）、RabbitMQ、AOP（未测试）">
+      <created>1622800144328</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622800144328</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nacos、OAuth2 （密码、授权码、客户端）、RabbitMQ、AOP（未测试）">
+      <created>1622801087197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622801087197</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过）、feign、RabbitMQ、AOP（未测试）">
+      <created>1623028919315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623028919316</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）">
+      <created>1623030379984</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623030379984</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本">
+      <created>1623034226060</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623034226060</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）">
+      <created>1623056233767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623056233767</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、">
+      <created>1623141473923</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623141473923</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka">
+      <created>1623910826044</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623910826044</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka、RocketMQ">
+      <created>1626231735168</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626231735168</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka、RocketMQ、mybatis-plus">
+      <created>1626424821956</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1626424821956</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test_testGC - 2021.06.09 at 15h 31m 04s.xml">
+      <configuration name="Test.testGC" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="241145000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="782" height="840" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35635358" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42514125" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32909605" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.2932961" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32775453" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32909605" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49932975" weight="0.54189944" />
+      <window_info anchor="bottom" id="Jms Browser" order="17" weight="0.32960895" />
+      <window_info anchor="bottom" id="Duplicate detector" order="18" weight="0.19972067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24896266" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.61126006" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Jms Messenger" order="9" weight="0.32918397" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Codota" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35131398" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42655367" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32627118" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.2937853" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32775453" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32909605" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49932975" visible="true" weight="0.5480226" />
+      <window_info anchor="bottom" id="Jms Browser" order="17" weight="0.32960895" />
+      <window_info anchor="bottom" id="Duplicate detector" order="18" weight="0.19972067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24896266" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.61126006" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Jms Messenger" order="9" weight="0.32918397" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Codota" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nacos、OAuth2、RabbitMQ" />
+    <MESSAGE value="Nacos、OAuth2修改(配置注释)、RabbitMQ" />
+    <MESSAGE value="Nacos、OAuth2 （密码、授权码、客户端）、RabbitMQ、AOP（未测试）" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过）、feign、RabbitMQ、AOP（未测试）" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka、RocketMQ" />
+    <MESSAGE value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka、RocketMQ、mybatis-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nacos、OAuth2 （密码、客户端、授权码测试通过获取token 但是还没测试请求接口）、feign、RabbitMQ（延迟队列）、AOP（拦截成功）、自定义注解实现、设置IDEA编译器jdk版本、GateWay（网关）、Kafka、RocketMQ、mybatis-plus" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/yw/demo/lock/NWaitDemo.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/reflect/Field.java</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/user/src/main/java/com/yw/demo/spring/ContextDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/target/test-classes/com/yw/demo/Test.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/HeapTest.java" />
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/KafkaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../working Tools/JARs/org/springframework/kafka/spring-kafka/2.5.2.RELEASE/spring-kafka-2.5.2.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="210" column="46" selection-start-line="210" selection-start-column="46" selection-end-line="210" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../working Tools/JARs/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar!/org/apache/kafka/clients/admin/NewTopic.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/producer/KafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/consumer/KafkaConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/controller/KafkaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/java/com/yw/demo/kafka/config/KafkaConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-683">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/oauth2-auth-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-nacos-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-nacos-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/SentinelApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-kafka/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/controller/SentinelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/service/IpInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/JVM.java" />
+    <entry file="file://$PROJECT_DIR$/basics/basics-sentinel/src/main/java/com/yw/demo/service/impl/IpInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/applet/AppletClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/security/SecureClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="187" column="36" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="36" />
+          <folding>
+            <element signature="e#37807#37808#0" expanded="true" />
+            <element signature="e#37839#37840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/Test1.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="2054" column="27" selection-start-line="2054" selection-start-column="27" selection-end-line="2054" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/HelloWorld.java" />
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/JVM.txt" />
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo.java" />
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/A.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/LockTest.java" />
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/loadClass.java" />
+    <entry file="file://$PROJECT_DIR$/user/src/test/java/com/yw/demo/ThreadDemo.java" />
+    <entry file="file://$PROJECT_DIR$/demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/LockUpgrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/jvm/JVM.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/jvm/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/LockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/lock/lock.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yw/demo/jvm/JVM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common-core</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

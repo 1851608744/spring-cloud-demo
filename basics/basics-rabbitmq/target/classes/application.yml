@@ -1,0 +1,13 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test_virtual
+    #配置发布消息确认回调
+    publisher-confirms: true

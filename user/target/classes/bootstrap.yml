@@ -1,0 +1,15 @@
+###swagger如下都是非必须的配置（实际使用时请根据实际情况配置）
+swagger:
+  enabled: true
+  title: API文档
+  description: springboot2.0.3.RELEASE Demo文档
+  termsOfServiceUrl: https://www.baidu.com
+  contact:
+    name: sage
+    url: www.meander.net.cn
+    email: sage@meander.net.cn
+  #接口包扫描路径
+  base-package: com.yw.demo.controller
+  #需排除的接口路径
+  exclude-path: /error/**
+#debug: true
