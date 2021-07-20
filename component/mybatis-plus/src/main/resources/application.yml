@@ -48,7 +48,7 @@ spring:
           slow-sql-millis: 1000
           log-slow-sql: true
           enabled: true
-        log4j:
+        log4j2:
           enabled: true
           result-set-log-enabled: false
           connection-log-enabled: false
@@ -61,4 +61,8 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:/mybatis/*Mapper.xml
   type-aliases-package: com.yw.demo
-
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  file:
+    path: classpath:/log/log4j2.xml

@@ -1,22 +1,28 @@
 package com.yw.demo.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.google.common.base.Function;
 import com.yw.demo.domain.User;
+import com.yw.demo.dto.UserDto;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.DefaultTypedTuple;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.CollectionUtils;
-
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.function.Consumer;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -24,17 +30,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class UserMapperTest {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
+    @Resource
+    private RedisTemplate redisTemplate;
 
     @org.junit.Test
     public void test() {
-        //System.out.println(("----- selectAll method test ------"));
-        //List<User> userList = userMapper.selectList(null);
-        //Assert.assertEquals(2, userList.size());
-        //userList.forEach(System.out::println);
-
-
 
     }
 
@@ -83,6 +85,9 @@ class UserMapperTest {
                         .apply("id = 2"));
         print(plainUsers4);
 
+        List<User> plainUsers5 = userMapper.selectList(new QueryWrapper<User>()
+                .apply("id = {0}", 2));
+        Assert.assertEquals(plainUsers4.size(), plainUsers5.size());
 
         UpdateWrapper<User> uw = new UpdateWrapper<>();
         uw.set("user_password", "654321");
@@ -92,6 +97,21 @@ class UserMapperTest {
         System.out.println(u4);
         Assert.assertNotNull(u4.getUserPassword());
 
+        List<User> lambdaUser6 = userMapper.selectList(new LambdaQueryWrapper<User>().eq(User::getId, 1).
+                and(i -> i.eq(User::getUserAge, "24")).and(i -> i.eq(User::getUserAddr, "南京")));
+    }
+
+    @Test
+    public void updateTest() {
+        User user = new User();
+        //user.setId(1);
+        //user.setUserName("yw");
+        user.setUserAddr("东京");
+        UpdateWrapper<User> uw = new UpdateWrapper<>();
+        //uw.lambda().eq(User::getId, 1);
+        //uw.eq("id", 1);
+        //uw.set("user_addr", "南京");
+        userMapper.update(user, uw);
     }
 
     private <T> void print(List<T> list) {
@@ -141,7 +161,27 @@ class UserMapperTest {
     }
 
 
+    @Test
+    public void redisTest() {
+        //redisTemplate.opsForValue().set("yw", "指引明路的苍蓝星");
+        //redisTemplate.opsForHash().put("苍蓝星", "工具人", "小哑巴");
+        Map map = new HashMap();
+        map.put("goods_num", 10);
+        map.put("goods_info", "{title:good,price:200}");
+        ZSetOperations.TypedTuple<String> typedTuple = new DefaultTypedTuple<String>("java", 1.00);
+        ZSetOperations.TypedTuple<String> typedTuple2 = new DefaultTypedTuple<String>("hello", 2.00);
+        Set<ZSetOperations.TypedTuple<String>> set = new HashSet<ZSetOperations.TypedTuple<String>>();
+        set.add(typedTuple);
+        set.add(typedTuple2);
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        valueOperations.set("user", "Hunter");
 
+        redisTemplate.opsForValue().set("user", "Hunter");
+        redisTemplate.opsForHash().putAll("user:id:1", map);
+        redisTemplate.opsForList().rightPushAll("user:id:2", 1, 2, 3, 4, 5, 6);
+        redisTemplate.opsForSet().add("user:id:3", 1, 2, 3, 4, 5);
+        redisTemplate.opsForZSet().add("user:id:4", set);
+    }
 
 
 }

@@ -8,6 +8,7 @@ import com.yw.demo.domain.User;
 //import com.yw.demo.sender.XdelaySender;
 import com.yw.demo.service.SysUserService;
 import com.yw.demo.service.UserService;
+import com.yw.demo.service.impl.RedisServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -31,6 +32,9 @@ public class UserController {
     @Autowired
     private SysUserService sysUserService;
 
+    @Autowired
+    private RedisServiceImpl redisService;
+
 
     @ApiOperation(value = "添加用户")
     @GetMapping("/saveUser")
@@ -47,8 +51,6 @@ public class UserController {
         return userService.queryUser(user);
     }
 
-
-
     @ApiOperation("用户登录授权信息")
     @GetMapping("/querySysUserInfo")
     public SysUserDto querySysUserByName(@ApiParam(value = "用户名称")
@@ -58,7 +60,13 @@ public class UserController {
 
     @RequestMapping("/")
     public String index() {
+        userService.updateUser(new User());
         return "index";
+    }
+
+    @GetMapping("/get/redis")
+    public Object getRedis(@RequestParam("key") String key) {
+        return redisService.getValue(key);
     }
 
     @RequestMapping("/user/hello")
@@ -70,9 +78,6 @@ public class UserController {
     public String login(@RequestParam("user") String user) {
         return "login" + user;
     }
-
-
-
 
 
 }

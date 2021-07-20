@@ -22,11 +22,11 @@ import java.util.List;
  * @author yangwei
  * @data 2021/06/07
  **/
-public abstract class BaseSwaggerConfg {
+public abstract class BaseSwaggerConfig {
 
     @Bean
     public Docket createRestApi() {
-        SwaggerProperties swaggerProperties = swaggerPropertiess();
+        SwaggerProperties swaggerProperties = swaggerProperties();
         DocumentationType documentationType;
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo(swaggerProperties))
@@ -85,5 +85,5 @@ public abstract class BaseSwaggerConfg {
      * 自定义Swagger配置
      * @return
      */
-    public abstract SwaggerProperties swaggerPropertiess();
+    public abstract SwaggerProperties swaggerProperties();
 }
