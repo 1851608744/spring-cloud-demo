@@ -17,6 +17,7 @@
         <module name="rabbitMQ" />
         <module name="swagger" />
         <module name="basics-sentinel" />
+        <module name="design-pattern" />
         <module name="basics-rocketmq" />
         <module name="basics-nacos-config" />
         <module name="oauth2-auth-server" />

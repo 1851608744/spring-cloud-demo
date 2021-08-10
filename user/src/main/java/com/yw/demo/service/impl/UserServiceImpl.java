@@ -1,6 +1,7 @@
 package com.yw.demo.service.impl;
 
 import com.yw.demo.common.utils.DateTimeUtil;
+import com.yw.demo.common.utils.ParamsUtils;
 import com.yw.demo.common.utils.RedisUtils;
 import com.yw.demo.domain.User;
 import com.yw.demo.dto.UserDTO;
@@ -60,7 +61,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(User user) {
-
+        ParamsUtils.isParamsNotNull(user, "id");
+        userMapper.updateByPrimaryKeySelective(user);
     }
 
 

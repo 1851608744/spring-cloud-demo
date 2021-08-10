@@ -2,6 +2,8 @@ package com.yw.demo.service;
 
 import com.yw.demo.domain.User;
 
+import java.util.Set;
+
 /**
  * @author yangwei
  * @description
@@ -22,5 +24,8 @@ public interface UserService {
      * @return
      */
     void update(User user);
+
+    Set getRedisZSet(String key);
+
 
 }

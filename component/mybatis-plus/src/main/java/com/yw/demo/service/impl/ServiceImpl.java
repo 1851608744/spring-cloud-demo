@@ -5,16 +5,24 @@ import com.yw.demo.domain.User;
 import com.yw.demo.mapper.UserMapper;
 import com.yw.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Set;
 
 /**
  * @author yangwei
  * @description
  * @data 2021/07/19
  **/
+@Service
 public class ServiceImpl implements UserService {
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @Autowired
     private UserMapper userMapper;
@@ -30,6 +38,11 @@ public class ServiceImpl implements UserService {
     public void update(User user) {
         userMapper.update(new User(), new LambdaUpdateWrapper<User>().
                 eq(User::getId, 1).set(User::getUserName, "Hunter"));
+    }
+
+    @Override
+    public Set getRedisZSet(String key) {
+        return redisTemplate.opsForZSet().range(key, 0, -1);
     }
 
     /**

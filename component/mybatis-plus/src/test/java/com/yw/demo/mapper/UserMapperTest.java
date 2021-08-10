@@ -4,19 +4,16 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.yw.demo.domain.User;
-import com.yw.demo.dto.UserDto;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.DefaultTypedTuple;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.CollectionUtils;
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -25,7 +22,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class UserMapperTest {
@@ -163,8 +159,6 @@ class UserMapperTest {
 
     @Test
     public void redisTest() {
-        //redisTemplate.opsForValue().set("yw", "指引明路的苍蓝星");
-        //redisTemplate.opsForHash().put("苍蓝星", "工具人", "小哑巴");
         Map map = new HashMap();
         map.put("goods_num", 10);
         map.put("goods_info", "{title:good,price:200}");
@@ -173,14 +167,27 @@ class UserMapperTest {
         Set<ZSetOperations.TypedTuple<String>> set = new HashSet<ZSetOperations.TypedTuple<String>>();
         set.add(typedTuple);
         set.add(typedTuple2);
-        ValueOperations valueOperations = redisTemplate.opsForValue();
-        valueOperations.set("user", "Hunter");
+        set.add(new DefaultTypedTuple<>("中分哥", 3.00));
+        set.add(new DefaultTypedTuple<>("骚鸟", 3.13));
+        set.add(new DefaultTypedTuple<>("毒妖鸟", 3.00));
+        set.add(new DefaultTypedTuple<>("飞雷龙", 3.23));
 
-        redisTemplate.opsForValue().set("user", "Hunter");
-        redisTemplate.opsForHash().putAll("user:id:1", map);
-        redisTemplate.opsForList().rightPushAll("user:id:2", 1, 2, 3, 4, 5, 6);
-        redisTemplate.opsForSet().add("user:id:3", 1, 2, 3, 4, 5);
-        redisTemplate.opsForZSet().add("user:id:4", set);
+        //ValueOperations valueOperations = redisTemplate.opsForValue();
+        //valueOperations.set("user", "Hunter");
+
+        //redisTemplate.opsForValue().set("user", "Hunter");
+        //redisTemplate.opsForHash().putAll("user:id:1", map);
+        //redisTemplate.opsForList().rightPushAll("user:id:2", 1, 2, 3, 4, 5, 6);
+        //redisTemplate.opsForSet().add("user:id:3", 1, 2, 3, 4, 5);
+        //redisTemplate.opsForZSet().add("user:id:4", set);
+        System.out.println(redisTemplate.opsForZSet().range("user:id:4", -1, 0));
+
+    }
+
+    @Test
+    public void getRedisTest() {
+        Set<ZSetOperations.TypedTuple<String>> range = redisTemplate.opsForZSet().rangeByScoreWithScores("user:id:4", 0, -1);
+        System.out.println(range);
     }
 
 

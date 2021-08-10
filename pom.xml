@@ -17,6 +17,7 @@
         <module>mq</module>
         <module>dto</module>
         <module>component</module>
+        <module>design-pattern</module>
     </modules>
 
     <properties>

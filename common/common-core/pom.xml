@@ -30,11 +30,12 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
-        <!--spring session 共享依赖-->
+        <!--spring session 共享依赖 （集成lettuce）-->
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
+
 
         <!--redisson-->
         <dependency>

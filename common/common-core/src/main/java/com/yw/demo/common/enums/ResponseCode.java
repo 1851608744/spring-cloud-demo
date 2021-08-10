@@ -8,6 +8,7 @@ public enum ResponseCode {
 	//通用返回码
 	SUCCESS("100000", "处理成功", true),
 	ERROR("100001", "处理失败",false),
+	FAILED("200002", "参数不全", false),
 	SYSTEM_ERROR("100002", "系统错误",false),
 
 	//业务错误码 - 参数错误
